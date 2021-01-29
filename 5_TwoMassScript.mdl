@@ -1,0 +1,14 @@
+
+@m mass 1 [1 0 0] 0.
+@m2 mass 1 [2 0 0] 0
+@g ground [0 0 0]
+
+@K param 0.1
+@Z param 0.001
+
+@s springDamper @m @g K Z
+@s2 springDamper @m @m2 K Z
+
+@in1 frcInput @m
+
+@out1 posOutput @m
